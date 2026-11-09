@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدماتنا - مؤسسة بيت ورد لمواد البناء والعزل</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="استكشف خدمات مؤسسة بيت ورد المتكاملة: توريد مواد البناء، العزل المائي، العزل الحراري، الإيبوكسي، معالجة وتدعيم الخرسانة، والاستشارات الهندسية في السعودية.">
+    <meta name="keywords"
+        content="خدمات العزل, عزل مائي, عزل حراري, توريد مواد بناء, معالجة خرسانة, ايبوكسي ارضيات, بيت ورد">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="بيت ورد">
+    <link rel="canonical" href="https://baytalward.com/services/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_SA">
+    <meta property="og:site_name" content="بيت ورد لمواد البناء والعزل">
+    <meta property="og:url" content="https://baytalward.com/services/">
+    <meta property="og:title" content="خدماتنا - مؤسسة بيت ورد لمواد البناء والعزل">
+    <meta property="og:description"
+        content="حلول عزل وإنشاءات متكاملة للمشاريع السكنية والتجارية في المملكة العربية السعودية.">
+    <meta property="og:image" content="https://baytalward.com/img/logo.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@beiit_ward">
+    <meta name="twitter:title" content="خدماتنا - مؤسسة بيت ورد">
+    <meta name="twitter:description" content="حلول عزل وإنشاءات متكاملة للمشاريع في المملكة العربية السعودية.">
+    <meta name="twitter:image" content="https://baytalward.com/img/logo.png">
+
+    <!-- Favicon & Manifest -->
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="apple-touch-icon" href="img/logo.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#ba1c1c">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
+
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .page-header-bg {
+            background: linear-gradient(rgba(17, 24, 39, 0.8), rgba(185, 28, 28, 0.85)),
+                url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .serv-card {
+            background: #fff;
+            border-radius: 1.25rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .serv-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .serv-img-wrapper {
+            position: relative;
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .serv-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .serv-card:hover .serv-img-wrapper img {
+            transform: scale(1.08);
+        }
+
+        .serv-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(185, 28, 28, 0.9);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.35rem 0.75rem;
+            border-radius: 9999px;
+            backdrop-filter: blur(4px);
+        }
+
+        .main-footer {
+            background: #111827;
+            color: #f3f4f6;
+            padding: 4rem 1rem 1.5rem;
+        }
+
+        .footer-container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .footer-top {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        @media (max-width: 1024px) {
+            .footer-top {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .footer-top {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #1f2937;
+            color: #e5e7eb;
+            margin-left: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .social-btn:hover {
+            background: #b91c1c;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        .footer-links h3,
+        .footer-products h3,
+        .footer-contact h3 {
+            font-size: 1.2rem;
+            color: #fff;
+            margin-bottom: 1.25rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-links h3::after,
+        .footer-products h3::after,
+        .footer-contact h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 3px;
+            background: #b91c1c;
+            border-radius: 2px;
+        }
+
+        .footer-links ul li,
+        .footer-products ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links ul li a,
+        .footer-products ul li a {
+            color: #9ca3af;
+            transition: color 0.3s;
+        }
+
+        .footer-links ul li a:hover,
+        .footer-products ul li a:hover {
+            color: #fff;
+            padding-right: 6px;
+        }
+
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+
+        .menu-overlay {
+            display: none;
+        }
+
+        .menu-overlay.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Top Bar -->
+    <div class="bg-red-700 text-white py-2 px-4">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm gap-2">
+            <div class="flex items-center gap-4">
+                <span><i class="fas fa-phone ml-2"></i> 0568524590</span>
+                <span><i class="fas fa-envelope ml-2"></i> sales@baytalward.com</span>
+            </div>
+            <div class="text-center">
+                افضل مؤسسة مواد بناء وتشطيب وعزل
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <a href="index.html" class="logo-container flex items-center">
+                    <img src="./img/logo.png" alt="شعار بيت ورد" class="w-16 h-16">
+                    <div class="logo-text mr-3">
+                        <h2 class="font-bold text-2xl text-[#ba1c1c]">بيت ورد</h2>
+                        <p class="text-xs text-[#fabd23] font-semibold">للمواد الإنشائية</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Icons -->
+                <div class="hidden md:flex items-center gap-4 text-gray-700">
+                    <a href="tel:0568524590" class="hover:text-green-600 transition" title="اتصال">
+                        <i class="fas fa-phone-alt text-xl"></i>
+                    </a>
+                    <a href="https://wa.me/966568524590" target="_blank" class="hover:text-green-500 transition"
+                        title="واتساب">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/beiit_ward" target="_blank"
+                        class="hover:text-pink-600 transition" title="انستجرام">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button id="mobileMenuBtn" class="md:hidden text-2xl text-gray-700 hover:text-red-700 transition">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Desktop Navigation Menu -->
+            <nav class="hidden md:block border-t border-gray-200">
+                <ul class="flex items-center justify-center gap-8 py-4 text-base font-medium">
+                    <li><a href="index.html" class="hover:text-red-700 transition py-2">الرئيسية</a></li>
+                    <li><a href="about/" class="hover:text-red-700 transition py-2">من نحن</a></li>
+                    <li><a href="services/"
+                            class="font-bold text-red-700 transition py-2 border-b-2 border-red-700">خدماتنا</a></li>
+                    <li><a href="index.html#Our-products" class="hover:text-red-700 transition py-2">منتجاتنا</a></li>
+                    <li><a href="contact/" class="hover:text-red-700 transition py-2">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="menuOverlay" class="menu-overlay fixed inset-0 bg-black bg-opacity-50 z-40"></div>
+
+    <!-- Mobile Menu Sidebar -->
+    <div id="mobileMenu"
+        class="mobile-menu fixed top-0 right-0 h-full w-80 max-w-full bg-white shadow-2xl z-50 overflow-y-auto">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-xl font-bold text-red-700">القائمة</h3>
+                <button id="closeMobileMenu" class="text-2xl text-gray-700 hover:text-red-700">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="space-y-3">
+                <a href="index.html" class="block py-2 text-gray-800 hover:text-red-700">الرئيسية</a>
+                <a href="about/" class="block py-2 text-gray-800 hover:text-red-700">من نحن</a>
+                <a href="services/" class="block py-2 font-bold text-red-700">خدماتنا</a>
+                <a href="index.html#Our-products" class="block py-2 text-gray-800 hover:text-red-700">منتجاتنا</a>
+                <a href="contact/" class="block py-2 text-gray-800 hover:text-red-700">تواصل معنا</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Hero Banner -->
+    <section class="page-header-bg text-white py-20 px-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">خدماتنا المتكاملة</h1>
+            <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
+                نقدم باقة شاملة من الخدمات الهندسية وحلول العزل وتوريد مواد الإنشاءات بأعلى معايير الجودة العالمية.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- الخدمة 1 -->
+                <div class="serv-card">
+                    <div class="serv-img-wrapper">
+                        <span class="serv-badge">الأكثر طلباً</span>
+                        <img src="./img/services-1.jpeg" alt="توريد مواد البناء والتشطيب">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">توريد مواد البناء والتشطيب</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                توفير كافة المواد الأساسية ومواد التشطيب والتربيط والشبك الفايبر ومواد سافيتو من أفضل
+                                المصادر العالمية والمحلية بأسعار جملة تنافسية.
+                            </p>
+                        </div>
+                        <div class="flex gap-3 pt-4 border-t border-gray-100">
+                            <a href="tel:0568524590"
+                                class="flex-1 text-center py-2.5 rounded-lg bg-gray-900 hover:bg-black text-white font-medium text-sm transition">
+                                <i class="fas fa-phone-alt ml-1"></i> اتصال
+                            </a>
+                            <a href="https://wa.me/966568524590" target="_blank"
+                                class="flex-1 text-center py-2.5 rounded-lg bg-green-600 hover:bg-green-700 text-white font-medium text-sm transition">
+                                <i class="fab fa-whatsapp ml-1"></i> واتساب
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- الخدمة 2 -->
+                <div class="serv-card">
+                    <div class="serv-img-wrapper">
+                        <span class="serv-badge">عزل مائي متطور</span>
+                        <img src="./img/services-2.png" alt="العزل المائي للأسطح والخزانات">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">أنظمة العزل المائي للأسطح والخزانات</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                حلول متكاملة لمنع تسرب المياه في الخزانات والمسابح والأسطح والقواعد باستخدام لفائف
+                                البيتومين والمواد الأسمنتية المطاطية المعتمدة.
+                            </p>
+                        </div>
+                        <div class="flex gap-3 pt-4 border-t border-gray-100">
+                            <a href="tel:0568524590"
+                                class="flex-1 text-center py-2.5 rounded-lg bg-gray-900 hover:bg-black text-white font-medium text-sm transition">
+                                <i class="fas fa-phone-alt ml-1"></i> اتصال
+                            </a>
+                            <a href="https://wa.me/966568524590" target="_blank"
+                                class="flex-1 text-center py-2.5 rounded-lg bg-green-600 hover:bg-green-700 text-white font-medium text-sm transition">
+                                <i class="fab fa-whatsapp ml-1"></i> واتساب
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- الخدمة 3 -->
+                <div class="serv-card">
+                    <div class="serv-img-wrapper">
+                        <span class="serv-badge">توفير الطاقة</span>
+                        <img src="./img/services-3.jpeg" alt="العزل الحراري والصوتي">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">العزل الحراري والصوتي المعتمد</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                ألواح البوليسترين المبثوق والممدد والصوف الصخري المتوافق مع كود البناء السعودي لتقليل
+                                استهلاك الكهرباء ورفع كفاءة تبريد المباني.
+                            </p>
+                        </div>
+                        <div class="flex gap-3 pt-4 border-t border-gray-100">
+                            <a href="tel:0568524590"
+                                class="flex-1 text-center py-2.5 rounded-lg bg-gray-900 hover:bg-black text-white font-medium text-sm transition">
+                                <i class="fas fa-phone-alt ml-1"></i> اتصال
+                            </a>
+                            <a href="https://wa.me/966568524590" target="_blank"
+                                class="flex-1 text-center py-2.5 rounded-lg bg-green-600 hover:bg-green-700 text-white font-medium text-sm transition">
+                                <i class="fab fa-whatsapp ml-1"></i> واتساب
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- الخدمة 4 -->
+                <div class="serv-card">
+                    <div class="serv-img-wrapper">
+                        <span class="serv-badge">أرضيات صناعية</span>
+                        <img src="./img/services-4.jpeg" alt="دهانات وحلول الإيبوكسي">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">دهانات وأنظمة الإيبوكسي للـ أرضيات</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                توريد وتطبيق أجود أنظمة أرضيات الإيبوكسي للمستودعات، والمصانع، والمواقف، والمستشفيات
+                                بمقاومة فائقة للاحتكاك والمواد الكيميائية.
+                            </p>
+                        </div>
+                        <div class="flex gap-3 pt-4 border-t border-gray-100">
+                            <a href="tel:0568524590"
+                                class="flex-1 text-center py-2.5 rounded-lg bg-gray-900 hover:bg-black text-white font-medium text-sm transition">
+                                <i class="fas fa-phone-alt ml-1"></i> اتصال
+                            </a>
+                            <a href="https://wa.me/966568524590" target="_blank"
+                                class="flex-1 text-center py-2.5 rounded-lg bg-green-600 hover:bg-green-700 text-white font-medium text-sm transition">
+                                <i class="fab fa-whatsapp ml-1"></i> واتساب
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- الخدمة 5 -->
+                <div class="serv-card">
+                    <div class="serv-img-wrapper">
+                        <span class="serv-badge">حلول هندسية</span>
+                        <img src="./img/services-6.jpeg" alt="معالجة وترميم وتدعيم الخرسانة">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">معالجة وترميم وتدعيم الخرسانة</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                مواد جروت عالية القوة، ألياف كربونية (CFRP)، ومواد حقن التشققات والشروخ لإعادة التأهيل
+                                الإنشائي وتدعيم الأعمدة والجسور الخرسانية.
+                            </p>
+                        </div>
+                        <div class="flex gap-3 pt-4 border-t border-gray-100">
+                            <a href="tel:0568524590"
+                                class="flex-1 text-center py-2.5 rounded-lg bg-gray-900 hover:bg-black text-white font-medium text-sm transition">
+                                <i class="fas fa-phone-alt ml-1"></i> اتصال
+                            </a>
+                            <a href="https://wa.me/966568524590" target="_blank"
+                                class="flex-1 text-center py-2.5 rounded-lg bg-green-600 hover:bg-green-700 text-white font-medium text-sm transition">
+                                <i class="fab fa-whatsapp ml-1"></i> واتساب
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- الخدمة 6 -->
+                <div class="serv-card">
+                    <div class="serv-img-wrapper">
+                        <span class="serv-badge">فواصل وتمدد</span>
+                        <img src="./img/services-7.jpeg" alt="فواصل التمدد والفيلر بورد">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">فواصل التمدد ورولات الوتر ستوب</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                ألواح الفيلر بورد المخصصة لفواصل التمدد الهيكلية، مانعات تسرب المياه (Water Stop)،
+                                ومعاجين البولي يوريثان عالية المرونة.
+                            </p>
+                        </div>
+                        <div class="flex gap-3 pt-4 border-t border-gray-100">
+                            <a href="tel:0568524590"
+                                class="flex-1 text-center py-2.5 rounded-lg bg-gray-900 hover:bg-black text-white font-medium text-sm transition">
+                                <i class="fas fa-phone-alt ml-1"></i> اتصال
+                            </a>
+                            <a href="https://wa.me/966568524590" target="_blank"
+                                class="flex-1 text-center py-2.5 rounded-lg bg-green-600 hover:bg-green-700 text-white font-medium text-sm transition">
+                                <i class="fab fa-whatsapp ml-1"></i> واتساب
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="py-16 bg-red-700 text-white text-center">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4">هل تحتاج إلى استشارة فنية أو عرض سعر لمشروعك؟</h2>
+            <p class="text-lg text-red-100 mb-8">
+                فريقنا الهندسي جاهز لمساعدتك في حساب الكميات وتقديم أنسب المواصفات بأفضل الأسعار.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="tel:0568524590"
+                    class="bg-white text-red-700 hover:bg-gray-100 px-8 py-3.5 rounded-xl font-bold transition shadow-lg inline-flex items-center gap-2">
+                    <i class="fas fa-phone-alt"></i> اتصل بمهندس المبيعات
+                </a>
+                <a href="https://wa.me/966568524590" target="_blank"
+                    class="bg-green-600 hover:bg-green-700 text-white px-8 py-3.5 rounded-xl font-bold transition shadow-lg inline-flex items-center gap-2">
+                    <i class="fab fa-whatsapp"></i> تواصل عبر الواتساب
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Contact Buttons -->
+    <div class="fixed bottom-6 left-6 z-50 flex flex-col gap-3">
+        <a href="https://wa.me/966568524590" target="_blank"
+            class="flex items-center justify-center w-14 h-14 rounded-full bg-green-500 text-white shadow-lg hover:scale-110 transition"
+            aria-label="WhatsApp">
+            <i class="fab fa-whatsapp text-3xl"></i>
+        </a>
+        <a href="tel:0568524590"
+            class="flex items-center justify-center w-14 h-14 rounded-full bg-gray-800 text-white shadow-lg hover:scale-110 transition"
+            aria-label="اتصال">
+            <i class="fas fa-phone-alt text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <div class="logo-container flex items-center mb-4">
+                        <img src="./img/logo.png" alt="شعار بيت ورد" class="w-16 h-16 ml-3">
+                        <div>
+                            <h2 class="text-2xl font-bold text-red-600">بيت ورد</h2>
+                            <p class="text-sm text-yellow-500">للمواد الإنشائية</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6">نبني الثقة، نؤسس المستقبل بأفضل حلول البناء والعزل المتكامل.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/beiit_ward" class="social-btn" title="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/beiit_ward" class="social-btn" title="X (Twitter)"><i
+                                class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.tiktok.com/@beiit_ward" class="social-btn" title="TikTok"><i
+                                class="fab fa-tiktok"></i></a>
+                        <a href="https://www.snapchat.com/add/beiit_ward?share_id=GfO0r557jkc&locale=ar-EG"
+                            class="social-btn" title="Snapchat"><i class="fab fa-snapchat"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
+                        <li><a href="about/"><i class="fas fa-chevron-left"></i> من نحن</a></li>
+                        <li><a href="services/"><i class="fas fa-chevron-left"></i> خدماتنا</a></li>
+                        <li><a href="contact/"><i class="fas fa-chevron-left"></i> تواصل معنا</a></li>
+                        <li><a href="index.html#Our-products"><i class="fas fa-chevron-left"></i> منتجاتنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-products">
+                    <h3>منتجاتنا</h3>
+                    <ul>
+                        <li><a href="index.html#Our-products"><i class="fas fa-cube ml-2"></i> مواد البناء</a></li>
+                        <li><a href="index.html#Our-products"><i class="fas fa-tint ml-2"></i> مواد العزل</a></li>
+                        <li><a href="index.html#Our-products"><i class="fas fa-shield-alt ml-2"></i> الإيبوكسي</a></li>
+                        <li><a href="index.html#Our-products"><i class="fas fa-hammer ml-2"></i> معالجة الخرسانة</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>معلومات التواصل</h3>
+                    <ul class="text-gray-400 space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone text-red-500"></i>
+                            <span dir="ltr">+966 56 852 4590</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-red-500"></i>
+                            <span>sales@baytalward.com</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-map-marker-alt text-red-500"></i>
+                            <span>المملكة العربية السعودية - جدة</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-6 text-center text-sm text-gray-500">
+                جميع الحقوق محفوظة © 2026 لمؤسسة بيت ورد لمواد البناء والعزل.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const closeMobileMenu = document.getElementById('closeMobileMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuOverlay = document.getElementById('menuOverlay');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+        }
+
+        mobileMenuBtn?.addEventListener('click', toggleMenu);
+        closeMobileMenu?.addEventListener('click', toggleMenu);
+        menuOverlay?.addEventListener('click', toggleMenu);
+    </script>
+</body>
+
+</html>

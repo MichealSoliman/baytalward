@@ -1,0 +1,22 @@
+{
+  "name": "بيت ورد لمواد البناء والعزل",
+  "short_name": "بيت ورد",
+  "description": "مؤسسة بيت ورد المتخصصة في توريد وتطبيق أجود مواد البناء، العزل المائي والحراري، والإيبوكسي في المملكة العربية السعودية.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e3a8a",
+  "icons": [
+    {
+      "src": "/img/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+
