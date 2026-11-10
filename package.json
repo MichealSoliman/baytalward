@@ -1,0 +1,27 @@
+{
+  "name": "_public_html-(1)",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+  "watch:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichealSoliman/baytalward.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MichealSoliman/baytalward/issues"
+  },
+  "homepage": "https://github.com/MichealSoliman/baytalward#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.6.2",
+    "postcss": "^8.5.32",
+    "tailwindcss": "^3.4.19"
+  }
+}
