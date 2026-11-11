@@ -469,7 +469,7 @@
                     </li>
                     <!-- Menu Item 1 - مواد العزل -->
                     <li class="dropdown relative group">
-                        <a href="#"
+                        <a href="/products/insulation/"
                             class="category-link hover:text-red-700 cursor-pointer flex items-center gap-1 py-2">
                             مواد العزل
                             <i class="fas fa-chevron-down text-xs"></i>
@@ -660,6 +660,9 @@
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
                     <div class="mobile-dropdown-content hidden pr-4 pb-3 space-y-2">
+                        <a href="/products/insulation/" class="block py-2 text-primary font-bold hover:text-red-700 border-b border-gray-100">
+                            عرض كافة مواد العزل المائي والحراري
+                        </a>
                         <a href="/products/insulation/bitumen-membrane/" class="product-link block py-2 text-gray-600 hover:text-red-700"
                             data-product="bitumen_rolls">لفائف البيتومين</a>
                         <a href="/products/insulation/cementitious-waterproofing/" class="product-link block py-2 text-gray-600 hover:text-red-700"
@@ -2207,12 +2210,18 @@
         <div class="mb-20">
             <div class="flex items-center justify-between mb-10">
                 <div>
-                    <h2 class="prod-carousel-section-title">مواد العزل</h2>
+                    <h2 class="prod-carousel-section-title">
+                        <a href="/products/insulation/" class="hover:text-red-700 transition">مواد العزل</a>
+                    </h2>
                     <p class="prod-carousel-section-desc">
                         مواد عازلة عالية الجودة للعزل الحراري والمائي للمباني والمنشآت
                     </p>
                 </div>
-                <div class="flex gap-3">
+                <div class="flex items-center gap-3">
+                    <a href="/products/insulation/" class="hidden sm:inline-flex items-center gap-1 text-xs sm:text-sm font-bold text-primary hover:text-red-700 ml-4 transition">
+                        <span>عرض كافة مواد العزل</span>
+                        <i class="fas fa-arrow-left text-xs"></i>
+                    </a>
                     <button class="prod-carousel-arrow" id="section1-prev" onclick="scrollCarousel('section1', -1)">
                         <i class="fas fa-chevron-right"></i>
                     </button>
