@@ -42,6 +42,7 @@
 | `/products/insulation/waterstop-roll/` | منتج | رول وتر ستوب | **مبنية بالكامل وجاهزة للنشر** (خالية من أي نواقص، Schema كاملة، صورة WebP، وربط تبادلي شامل) | `index, follow` | نعم (0.9) |
 | `/products/insulation/rubber-waterproofing/` | منتج | عازل مطاطي | **مبنية بالكامل وجاهزة للنشر** (خالية من أي نواقص، صورة Rubber-insulator.webp، Schema كاملة، وربط تبادلي شامل) | `index, follow` | نعم (0.9) |
 | `/products/insulation/polystyrene-insulation-boards/` | منتج | ألواح بولسترين | **مبنية بالكامل وجاهزة للنشر** (خالية من أي نواقص، صورة Insulation-panel.webp، مقارنة EPS/XPS، تكامل العزل المائي والحراري) | `index, follow` | نعم (0.9) |
+| `/products/insulation/rockwool/` | منتج | صوف صخري | **مبنية بالكامل وجاهزة للنشر** (خالية من أي نواقص، صورة Rock-wool.webp، احتياطات السلامة، وربط تبادلي شامل) | `index, follow` | نعم (0.9) |
 | `/blog/bitumen-vs-cementitious-waterproofing/` | مقال مقارنة | الفرق بين العزل البيتوميني والاسمنتي | **مبني بالكامل وجاهز للنشر** (1763 كلمة، رسم SVG للطبقات، FAQ Schema كاملة) | `index, follow` | نعم (0.8) |
 | `/products/insulation/` | قسم | مواد العزل في جدة | موجودة كملف قديم وبحاجة لتوحيد الهيدر/الفوتر والكروت | `index, follow` | نعم |
 | باقي صفحات المنتجات والمقالات | منتجات / مقالات | متفرقة | ملفات تمهيدية قديمة لم تُبنَ بعد | - | لم تُدرج بعد |
