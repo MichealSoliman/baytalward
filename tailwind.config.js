@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Cairo', 'sans-serif'],
+      },
       colors: {
         primary: {
           DEFAULT: '#1e3a8a',
